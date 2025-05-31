@@ -23,7 +23,7 @@ df = spark \
             'org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="VawEzo1ikLtrA8Ug8THa";') \
     .option("subscribe", f'{topic_prefix}_sensors_streaming') \
     .option("startingOffsets", "earliest") \
-    .option("maxOffsetsPerTrigger", "5100") \
+    .option("maxOffsetsPerTrigger", "5") \
     .option("failOnDataLoss", "false") \
     .load()
 
